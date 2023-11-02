@@ -74,10 +74,6 @@ export class VersionFallbackMiddleware implements NestMiddleware {
       routes,
     );
 
-    console.log(req.method, originalUrl, version, routes);
-
-    console.log(routeExists);
-
     if (!routeExists) {
       const previousVersion = findPreviousVersion(
         req.method,
@@ -94,7 +90,6 @@ export class VersionFallbackMiddleware implements NestMiddleware {
         const v = version.replace(/[\d\.]/g, previousVersion);
 
         return res.redirect(createUrlHandler(v, originalUrl));
-        // Redirect(createUrlHandler(v, originalUrl));
       }
     }
     next();
