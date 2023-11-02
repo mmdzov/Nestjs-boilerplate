@@ -3,7 +3,7 @@ import { UsersService } from './users.service';
 import { Body, Controller, Post } from '@nestjs/common';
 
 @Controller({
-  version: ['2', '1'],
+  version: '2',
   path: 'users',
 })
 export class UsersControllerV2 {
