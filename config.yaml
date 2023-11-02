@@ -1,8 +1,24 @@
 http:
-  host: 'localhost'
+  host: localhost
   port: 3000
 
 database:
-  host: 'localhost'
+  host: localhost
   port: 27017
-  name: 'Nestjs-boilerplate'
+  name: Nestjs-boilerplate
+
+docs:
+  title: Nestjs-boilerplate
+  description: The Nestjs-boilerplate API description
+  path: api
+  versions:
+    - version: 1.0
+      tags:
+        - boilerplate
+        
+    - version: 2.0
+      title: Nestjs-boilerplate v2
+      description: The Nestjs-boilerplate API description v2
+      path: /api/v2/docs
+      tags:
+        - boilerplate
