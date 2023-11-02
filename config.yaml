@@ -8,17 +8,19 @@ database:
   name: Nestjs-boilerplate
 
 docs:
+  enable: true
   title: Nestjs-boilerplate
   description: The Nestjs-boilerplate API description
   path: api
   versions:
     - version: 1.0
       tags:
-        - boilerplate
-        
+        - boilerplate tag 1
+
     - version: 2.0
       title: Nestjs-boilerplate v2
       description: The Nestjs-boilerplate API description v2
       path: /api/v2/docs
       tags:
-        - boilerplate
+        - boilerplate tag 1
+        - boilerplate tag 2

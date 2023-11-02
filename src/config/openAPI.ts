@@ -39,6 +39,8 @@ export class OpenAPI {
   create(app: IBuildDocument['app']) {
     const { docs } = configuration();
 
+    if (!docs?.enable) return;
+
     for (const i in docs.versions) {
       const versionInstance = docs.versions[i];
 
