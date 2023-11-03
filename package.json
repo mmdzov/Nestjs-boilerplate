@@ -34,7 +34,8 @@
     "js-yaml": "^4.1.0",
     "mongoose": "^7.6.4",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
