@@ -55,7 +55,9 @@ Start dev server
   npm run start:dev
 ```
 
+The path `/health` checks the health of ping and the response of `GET /users`, which you can access through `http://localhost:3000/health`. You can also check the health of the mongoose database in the path `/health/mongoose`: `http://localhost:3000/health/mongoose`
 
+You can see your api documentation at `http://localhost:3000/api` and version 2 at `http://localhost:3000/api/v2/docs`.
 ## Structure
 
     src 
