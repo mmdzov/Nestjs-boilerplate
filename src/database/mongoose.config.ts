@@ -1,4 +1,4 @@
-import configuration from './configuration';
+import configuration from 'src/config/configuration';
 
 export const mongoDBAddr = () => {
   const { database } = configuration();
