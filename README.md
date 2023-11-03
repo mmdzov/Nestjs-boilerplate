@@ -23,6 +23,39 @@ Manage your APIs. Write documents, and jump to different versions.
 - CodeQl
 
 
+## Usage
+
+Clone the project
+
+```bash
+  git clone https://github.com/mmdzov/Nestjs-boilerplate.git
+```
+
+Go to the project directory
+
+```bash
+  cd Nestjs-boilerplate
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+Start dev server
+
+```bash
+  npm run start:dev
+```
+
+
 ## Structure
 
     src 
