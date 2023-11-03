@@ -7,19 +7,24 @@ import configuration from './config/configuration';
 import * as compression from 'compression';
 import { VersionFallbackMiddleware } from './common/middlewares/version-fallback.middleware';
 import { OpenAPI } from './config/openAPI';
+import helmet from 'helmet';
+import * as csurf from 'csurf';
 
 async function bootstrap() {
   const { http } = configuration();
 
   const app = await NestFactory.create(AppModule);
 
+  app.use(helmet());
+  app.use(csurf());
+  app.enableCors();
+  app.use(compression());
+
   app.enableShutdownHooks();
 
   app.enableVersioning({
     type: VersioningType.URI,
   });
-
-  app.use(compression());
 
   app.use(new VersionFallbackMiddleware().use);
 
