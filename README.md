@@ -12,14 +12,15 @@ Manage your APIs. Write documents, and jump to different versions.
 - Fallback version
     - Easily versioning your APIs. Don't worry if the previous APIs are not in the new versions, you will be automatically referred to the closest previous version that supports the said API. 
 - Swagger (Easy versioning)
-- CodeQl
+    - Write documentation for your APIs and easily version the documentation
 - Mongoose
 - Helmet
-- Csrf Protection
-- Cors
+- CSRF Protection
+- CORS
 - Compression
 - Health checker
 - Zod validator
+- CodeQl
 
 
 ## Structure
@@ -41,7 +42,6 @@ Manage your APIs. Write documents, and jump to different versions.
     │   ├── constants
     │   ├── decorators
     │   ├── dto
-    │   ├── exceptions
     │   ├── filters
     │   ├── guards
     │   ├── interceptors
