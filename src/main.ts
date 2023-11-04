@@ -8,7 +8,7 @@ import * as compression from 'compression';
 import { VersionFallbackMiddleware } from './common/middlewares/version-fallback.middleware';
 import { OpenAPI } from './config/openAPI';
 import helmet from 'helmet';
-import * as csurf from 'csurf';
+// import * as csurf from 'csurf';
 
 async function bootstrap() {
   const { http } = configuration();
@@ -26,7 +26,7 @@ async function bootstrap() {
   const openApi = new OpenAPI();
 
   openApi.create(app);
-  app.use(csurf());
+  // app.use(csurf());
 
   app.use(helmet());
   app.enableCors();

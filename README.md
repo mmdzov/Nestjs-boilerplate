@@ -15,7 +15,6 @@ Manage your APIs. Write documents, and jump to different versions.
     - Write documentation for your APIs and easily version the documentation
 - Mongoose
 - Helmet
-- CSRF Protection
 - CORS
 - Compression
 - Health checker
