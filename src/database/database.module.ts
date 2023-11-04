@@ -10,6 +10,7 @@ export class DatabaseModule {
     return {
       imports: [MongooseModule.forRoot(mongoDBAddr())],
       module: DatabaseModule,
+      exports: [MongooseModule],
     };
   }
 
@@ -17,6 +18,7 @@ export class DatabaseModule {
     return {
       imports: [MongooseModule.forFeature(models, connectionName)],
       module: DatabaseModule,
+      exports: [MongooseModule],
     };
   }
 }
