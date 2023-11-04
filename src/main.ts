@@ -15,11 +15,6 @@ async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
 
-  app.use(helmet());
-  app.use(csurf());
-  app.enableCors();
-  app.use(compression());
-
   app.enableShutdownHooks();
 
   app.enableVersioning({
@@ -31,6 +26,11 @@ async function bootstrap() {
   const openApi = new OpenAPI();
 
   openApi.create(app);
+  app.use(csurf());
+
+  app.use(helmet());
+  app.enableCors();
+  app.use(compression());
 
   await app.listen(http.port);
 
